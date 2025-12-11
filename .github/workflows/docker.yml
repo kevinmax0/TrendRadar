@@ -114,7 +114,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: wantcat/trendradar-mcp
-          tags: |
+          tags: | 
             type=raw,value=${{ steps.version.outputs.version }}
             type=raw,value=${{ steps.version.outputs.major_minor }}
             type=raw,value=latest
