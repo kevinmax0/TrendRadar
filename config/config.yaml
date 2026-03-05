@@ -41,7 +41,7 @@ app:
 # ===============================================================
 schedule:
   enabled: true                         # 是否启用调度系统
-  preset: "morning_evening"             # 预设模板名称（见上方说明）
+  preset: "office_hours"             # 预设模板名称（见上方说明）
 
 
 # ===============================================================
@@ -64,7 +64,7 @@ platforms:
     - id: "thepaper"
       name: "澎湃新闻"
     - id: "bilibili-hot-search"
-      name: "bilibili 热搜"
+      name: "bilibili"
     - id: "cls-hot"
       name: "财联社热门"
     - id: "ifeng"
@@ -155,7 +155,7 @@ rss:
 #    • 适用场景：避免重复信息干扰
 # ===============================================================
 report:
-  mode: "incremental"                     # 可选: daily | current | incremental
+  mode: "current"                     # 可选: daily | current | incremental
                                       # ⚠️ 开启调度系统后，此值会被当前时间段的 report_mode 覆盖
 
 
